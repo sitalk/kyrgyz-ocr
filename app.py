@@ -55,7 +55,8 @@ def process():
       command = ['tesseract', input_file, output_file, '-l', request.form['lang'], hocr]
       proc = subprocess.Popen(command, stderr=subprocess.PIPE)
       proc.wait()
-
+      content = request.get_json(silent=True)
+      print content
       output_file += ext
 
       if os.path.isfile(output_file):
