@@ -56,7 +56,7 @@ def process():
       proc = subprocess.Popen(command, stderr=subprocess.PIPE)
       proc.wait()
       content = request.get_json(silent=True)
-      print() content
+      print(content)
       output_file += ext
 
       if os.path.isfile(output_file):
