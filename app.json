@@ -12,7 +12,7 @@
       "url": "heroku/python"
     },
     {
-      "url": "https://github.com/sitalk/heroku-buildpack-tessearct-kir"
+      "url": "https://github.com/matteotiziano/heroku-buildpack-tesseract"
     }
   ]
 }
